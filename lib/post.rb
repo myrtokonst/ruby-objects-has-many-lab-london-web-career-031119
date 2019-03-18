@@ -1,7 +1,8 @@
 require "pry"
 class Post 
 
-  attr_accessor :title, :author
+  attr_accessor :title, :author, :name
+
   @@all = []  
   
   
@@ -15,10 +16,10 @@ class Post
   end  
   
   def author_name
+
     if author
       self.author.name
-    end
-  end 
+  
   
   
 end
